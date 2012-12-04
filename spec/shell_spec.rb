@@ -16,6 +16,7 @@ describe Calatrava::Shell do
     create_dir 'shell/stylesheets'
     write_file 'shell/stylesheets/shell.css', ''
     write_file 'shell/stylesheets/template.sass', ''
+    write_file 'shell/stylesheets/template.scss', ''
   end
 
   context 'coffee files' do
@@ -35,6 +36,7 @@ describe Calatrava::Shell do
     
     it { should include 'shell/stylesheets/shell.css' }
     it { should include 'shell/stylesheets/template.sass' }
+    it { should include 'shell/stylesheets/template.scss' }
   end
 
   context 'features' do
